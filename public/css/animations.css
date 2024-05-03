@@ -1,0 +1,122 @@
+.update-row-animation {
+    animation-name: uplight-row-animation;
+    animation-duration: 1.4s;
+}
+
+@keyframes uplight-row-animation {
+    0%      {background-color: white;}
+    40%     {background-color: rgb(126, 212, 126);}
+    100%    {background-color: white;}
+}
+
+.remove-row-animation {
+    animation-name: remove-row-animation;
+    animation-duration: 1.4s;
+}
+
+@keyframes remove-row-animation {
+    0%      {background-color: white;}
+    40%     {background-color: rgb(248, 111, 87);}
+    100%    {background-color: white;}
+}
+
+.rainbow-effect-animation {
+    animation-name: rainbow-effect-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rainbow-effect-animation {
+    0%      {color: #8ecae6;}
+    20%     {color: #219ebc;}
+    40%     {color: #023047;}
+    60%     {color: #ffb703;}
+    80%     {color: #fb8500;}
+    100%    {color: #286a8b;}
+}
+
+.spin-forward-animation {
+    animation-name: spin-animation;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+.spin-backward-animation {
+    animation-name: spin-back-animation;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin-animation {
+    0%      {transform: rotate(0deg); color: rgb(103, 155, 214)}
+    100%    {transform: rotate(180deg); color: rgb(151, 48, 35)}
+}
+@keyframes spin-back-animation {
+    0%      {transform: rotate(180deg); color: rgb(151, 48, 35)}     
+    100%    {transform: rotate(0deg); color: rgb(103, 155, 214)}
+}
+
+.expand-animation {
+    animation-name: expand-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes expand-animation {
+    0%      {height: 0rem;}     
+    100%    {height: 27rem;}
+}
+
+.collaps-animation {
+    animation-name: collaps-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes collaps-animation {
+    0%      {height: 27rem;}     
+    100%    {height: 0rem;}
+}
+
+.turnto-x-animation {
+    animation-name: turnto-x-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.turnto-plus-animation {
+    animation-name: turnto-plus-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turnto-x-animation {
+    0%      {transform: rotate(0deg); color: rgb(96 165 250)}     
+    100%    {transform: rotate(45deg); color: rgb(151, 48, 35)}
+}
+@keyframes turnto-plus-animation {
+    0%    {transform: rotate(45deg); color: rgb(151, 48, 35)}
+    100%      {transform: rotate(0deg); color: rgb(96 165 250)}     
+}
+
+.slide-right-in-animation {
+    animation-name: slide-right-in-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right-in-animation {
+    0%    {margin-left: 0rem; }
+    100%      {margin-left: 19rem;}     
+}
+
+.slide-left-out-animation {
+    animation-name: slide-left-out-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left-out-animation {
+    0%    {margin-left: 19rem;}
+    100%      {margin-left: 0rem;}     
+}

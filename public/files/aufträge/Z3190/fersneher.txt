@@ -1,0 +1,19 @@
+from flask import Flask, render_template, send_file
+from selenium import webdriver
+
+app = Flask(__name__)
+
+dr = webdriver.Chrome()
+
+@app.route(channelid)
+def open(id)
+    dr.get('httpswww.joyn.deplaylive-tvfrom=%2F&channel_id='+id)
+    return a href='http192.168.178.285000'Schließena
+
+@app.route()
+def home()
+    return send_file('index.html')
+
+
+if (__name__ == __main__)
+    app.run(192.168.178.28)
