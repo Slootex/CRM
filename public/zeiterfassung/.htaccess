@@ -1,0 +1,11 @@
+#<Files ~ "^\.(htaccess|htpasswd)$">
+#	deny from all
+#</Files>
+#<Files "*.txt">
+#  	deny from all
+#</Files>
+Options -Indexes
+#order deny,allow
+
+RewriteEngine On
+RewriteBase /volume2/web/backend/

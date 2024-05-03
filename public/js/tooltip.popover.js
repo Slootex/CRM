@@ -1,0 +1,2 @@
+jQuery('[data-toggle="tooltip"]').tooltip({'animation': true, 'delay': { 'show': 0, 'hide': 0 }, 'html': true});
+jQuery('[data-toggle="popover"]').popover({'animation': true, 'delay': { 'show': 0, 'hide': 0 }, 'html': true});

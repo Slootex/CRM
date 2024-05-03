@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected folder"
+AuthUserFile /kunden/553315_28355/seite1-gzamotors_de/includes/.htpasswd
+require valid-user

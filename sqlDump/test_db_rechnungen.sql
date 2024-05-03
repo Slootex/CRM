@@ -1,0 +1,78 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: localhost    Database: test_db
+-- ------------------------------------------------------
+-- Server version	8.0.35
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `rechnungen`
+--
+
+DROP TABLE IF EXISTS `rechnungen`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `rechnungen` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `kundenid` varchar(255) DEFAULT NULL,
+  `rechnungsnummer` varchar(255) DEFAULT NULL,
+  `pos` int DEFAULT NULL,
+  `menge` varchar(255) DEFAULT NULL,
+  `artnr` varchar(255) DEFAULT NULL,
+  `bezeichnung` varchar(255) DEFAULT NULL,
+  `mwst` varchar(255) DEFAULT NULL,
+  `nettobetrag` varchar(255) DEFAULT NULL,
+  `mwstbetrag` varchar(255) DEFAULT NULL,
+  `rabatt` varchar(255) DEFAULT NULL,
+  `bruttobetrag` varchar(255) DEFAULT NULL,
+  `kontonummer` varchar(255) DEFAULT NULL,
+  `updated_at` varchar(255) DEFAULT NULL,
+  `created_at` varchar(255) DEFAULT NULL,
+  `type` varchar(255) DEFAULT NULL,
+  `mitarbeiter` varchar(255) DEFAULT NULL,
+  `zahlungsziel` int DEFAULT NULL,
+  `deleted` varchar(255) DEFAULT NULL,
+  `rechnungstext` varchar(255) DEFAULT NULL,
+  `deleted_at` varchar(255) DEFAULT NULL,
+  `deleted_from` varchar(255) DEFAULT NULL,
+  `epreis` varchar(255) DEFAULT NULL,
+  `process_id` varchar(255) DEFAULT NULL,
+  `rabatt_type` varchar(255) DEFAULT NULL,
+  `rabatt_bn` varchar(255) DEFAULT NULL,
+  `bezahlt` varchar(255) DEFAULT NULL,
+  `bezahlt_at` varchar(255) DEFAULT NULL,
+  `bezahlt_from` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `rechnungen`
+--
+
+LOCK TABLES `rechnungen` WRITE;
+/*!40000 ALTER TABLE `rechnungen` DISABLE KEYS */;
+INSERT INTO `rechnungen` VALUES (20,'5622','F387254',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-18 14:35:18','2024-01-18 10:43:07','Rechnung','4',123,'deleted','1','18.01.2024','daniel','12','E5313',NULL,NULL,NULL,NULL,NULL),(21,'5622','F387254',1,'123','123','Nachnahme','0','0123',NULL,'%','146.37',NULL,'2024-01-18 14:35:18','2024-01-18 10:43:14','Rechnung','4',123,'deleted','1','18.01.2024','daniel','12','E5313',NULL,NULL,NULL,NULL,NULL),(22,'5622','F387255',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-18 11:15:50','2024-01-18 11:15:50','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(23,'5622','F387255',1,'123','123','Nachnahme','0','0123',NULL,'%','146.37',NULL,'2024-01-18 11:15:50','2024-01-18 11:15:50','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(24,'5622','F387256',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-18 11:16:22','2024-01-18 11:16:22','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(25,'5622','F387256',1,'123','123','Nachnahme','0','0123',NULL,'%','146.37',NULL,'2024-01-18 11:16:22','2024-01-18 11:16:22','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(26,'5622','F387257',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-18 11:16:48','2024-01-18 11:16:48','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(27,'5622','F387257',1,'123','123','Nachnahme','0','0123',NULL,'%','146.37',NULL,'2024-01-18 11:16:49','2024-01-18 11:16:49','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(28,'5622','F387258',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-18 11:18:57','2024-01-18 11:18:57','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(29,'5622','F387258',1,'123','123','Nachnahme','0','0123',NULL,'%','146.37',NULL,'2024-01-18 11:18:57','2024-01-18 11:18:57','Rechnung','4',123,NULL,'1',NULL,NULL,'12','E5313',NULL,NULL,NULL,NULL,NULL),(30,'9965','5550',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-22 15:14:16','2024-01-22 15:14:16','','4',NULL,NULL,NULL,NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(31,'9965','4140',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-22 15:14:40','2024-01-22 15:14:40','','4',NULL,NULL,NULL,NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(32,'9965','4140',1,'1','5541','test','19,00','12,00','','0','14,00',NULL,'2024-01-22 15:15:02','2024-01-22 15:14:50','','4',NULL,NULL,NULL,NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(33,'9965','F387259',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-22 19:13:50','2024-01-22 15:18:00','Rechnung','4',123,NULL,'1',NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(34,'9965','F387259',1,'123','123123','Nachname','0','2',NULL,'%','2.38',NULL,'2024-01-22 19:13:50','2024-01-22 15:18:10','Rechnung','4',123,NULL,'1',NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(35,'9965','F387260',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-22 19:12:00','2024-01-22 19:12:00','Rechnung','4',123,NULL,'awdawdawdawd',NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(36,'9965','F387260',1,'123','123123','Nachname','0','2',NULL,'%','2.38',NULL,'2024-01-22 19:12:00','2024-01-22 19:12:00','Rechnung','4',123,NULL,'awdawdawdawd',NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL),(37,'9965','F387259',1,'1','5541','test','0','12',NULL,'0%','14',NULL,'2024-01-22 19:13:50','2024-01-22 19:13:28','Rechnung','4',123,NULL,'1',NULL,NULL,'12','J5058',NULL,NULL,NULL,NULL,NULL);
+/*!40000 ALTER TABLE `rechnungen` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-02-23 11:34:43

@@ -1,0 +1,5 @@
+<?php
+
+	$filename = "begleitschein.pdf";
+
+?>

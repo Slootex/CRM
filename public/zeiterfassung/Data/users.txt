@@ -1,0 +1,5 @@
+Pfad;Name;Passwort in sha1;Gruppe;RFID
+administrator;gahmad;115f03cc463c9abc481d611bdfee2e6652f66c4e;
+osman;dweber;40d82c1106078b91df2c18f5652205663fce653a;
+mluber;mluber;8a987a3a1fd3cec9bda0c1f8aefaf3844683f2ce;
+lgloede;lgloede;1c7112383fb81f6691fae1c18bd87c4a7c7b0649;
